@@ -9,7 +9,7 @@ public class Color : MonoBehaviour
     void Start()
     {
 		rend = GetComponent<Renderer>();
-		rend.material.SetColor("_Color", UnityEngine.Color.red)wwwwwwwsss;
+		rend.material.SetColor("_Color", UnityEngine.Color.red);
 	}
 
     // Update is called once per frame

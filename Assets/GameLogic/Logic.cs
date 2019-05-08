@@ -12,7 +12,11 @@ namespace GameLogic
 
 	public static class GameParams
 	{
-		public static GameObject SavedObject;
+		public static List<GameObject> SavedObjects;
+		static GameParams()
+		{
+			SavedObjects = new List<GameObject>();
+		}
 	}
 
 	public class Logic : MonoBehaviour

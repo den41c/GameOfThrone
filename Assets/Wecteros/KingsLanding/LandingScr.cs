@@ -18,8 +18,28 @@ public class LandingScr : MonoBehaviour
 
 		if (land != null)
 		{
-			GameParams.SavedObject.transform.position = land.UnitPosition;
+			MoveToLand(GameParams.SavedObjects, land);
 		}
+		GameParams.SavedObjects.Clear();
+	}
+	Vector3? curentPosition;
+	/// <summary>
+	/// !!!!Todo!!!! 
+	/// </summary>
+	/// <param name="comingObjects"></param>
+	/// <param name="land"></param>
+	private void MoveToLand(List<GameObject> comingObjects, ILand land)
+	{
+		//var curentPosition = new Vector3(0, 0, 0);
+		foreach (var comeobject in comingObjects)
+		{
+			curentPosition = 
+				(curentPosition.HasValue ?
+				(Vector3)curentPosition : land.DefUnitPosition) + land.VectorToStore;
+
+			comeobject.transform.position = (Vector3)curentPosition;
+		}
+		curentPosition = null;
 	}
 
     // Update is called once per frame

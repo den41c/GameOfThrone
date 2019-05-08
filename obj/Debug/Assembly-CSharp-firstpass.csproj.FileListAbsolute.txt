@@ -208,5 +208,3 @@ C:\repos\GameOfThrones0.01\GameOfThrone\obj\Debug\Assembly-CSharp-firstpass.cspr
 C:\repos\GameOfThrones0.01\GameOfThrone\obj\Debug\Assembly-CSharp-firstpass.csproj.CopyComplete
 C:\repos\GameOfThrones0.01\GameOfThrone\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\repos\GameOfThrones0.01\GameOfThrone\obj\Debug\Assembly-CSharp-firstpass.pdb
-C:\repos\GameOfThrones0.01\GameOfThrone\Temp\bin\Debug\Boo.Lang.dll
-C:\repos\GameOfThrones0.01\GameOfThrone\Temp\bin\Debug\UnityEditor.UI.dll

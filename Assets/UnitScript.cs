@@ -14,7 +14,7 @@ public class UnitScript : MonoBehaviour
 
 	void OnMouseDown()
 	{
-		GameParams.SavedObject = GetComponent<MeshFilter>().gameObject;
+		GameParams.SavedObjects.Add(GetComponent<MeshFilter>().gameObject);
 	}
 
 	// Update is called once per frame
