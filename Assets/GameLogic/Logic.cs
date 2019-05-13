@@ -4,6 +4,12 @@ using UnityEngine;
 
 namespace GameLogic
 {
+
+	public class UnitBase : MonoBehaviour
+	{
+
+	}
+
 	public interface Unit
 	{
 		string Fraction { get; set; }
@@ -13,9 +19,12 @@ namespace GameLogic
 	public static class GameParams
 	{
 		public static List<GameObject> SavedObjects;
+
+		public static GameObject SavedLand;
 		static GameParams()
 		{
 			SavedObjects = new List<GameObject>();
+			SavedLand = new GameObject();
 		}
 	}
 

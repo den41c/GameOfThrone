@@ -15,7 +15,7 @@ public class LandingScr : MonoBehaviour
 	void OnMouseDown()
 	{
 		var land = LandsProvider.Get(GetComponent<TextMesh>().text);
-
+		GameParams.SavedLand = GetComponent<TextMesh>().gameObject;
 		if (land != null)
 		{
 			MoveToLand(GameParams.SavedObjects, land);
